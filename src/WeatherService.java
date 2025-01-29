@@ -69,6 +69,7 @@ public class WeatherService {
             PreparedStatement stmt = conn.prepareStatement(query);
             stmt.setString(1, city);
 
+
             int rowsDeleted = stmt.executeUpdate();
             if (rowsDeleted > 0) {
                 System.out.println("Weather data deleted successfully.");
